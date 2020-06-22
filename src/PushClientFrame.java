@@ -48,7 +48,7 @@ public class PushClientFrame extends JFrame {
 	
 	private void setup() {
 		try {
-			socket = new Socket("localhost",9999);
+			socket = new Socket("localhost",9999); //binding
 			text.append("연결완료\n");
 			in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 		} catch (IOException e) {
